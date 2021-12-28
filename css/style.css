@@ -29,7 +29,7 @@ header .logo {
   font-size: 1.8em;
   letter-spacing: 0.1em;
 }
-.img-logo {
+header .img-logo {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -37,13 +37,13 @@ header .logo {
   left: 10%;
   transform: translate(-50%, -50%);
 }
-.navigation a {
+header .navigation a {
   color: #2980b9;
   font-size: 1.2em;
   font-weight: 700;
   padding: 0 20px;
 }
-.navigation a:hover {
+header .navigation a:hover {
   color: crimson;
 }
 /* Ending Header */
@@ -77,14 +77,14 @@ header .logo {
   flex-direction: column;
   justify-content: center;
 }
-.presonal-photo {
+.main .presonal-photo {
   border: 2px solid white;
   height: 100%;
   margin-right: 10vw;
   border-radius: 20px;
   z-index: 1;
 }
-.texture {
+.main .texture {
   position: absolute;
   right: 10px;
   margin-top: 50px;
@@ -110,7 +110,7 @@ header .logo {
   font-weight: 700;
   letter-spacing: 1px;
 }
-.main-btn {
+.main .main-btn {
   color: #fff;
   text-decoration: none;
   padding: 0.9375em 2.1875em;
@@ -123,13 +123,63 @@ header .logo {
   margin-bottom: 40px;
   transition: 0.5s ease-in-out;
 }
-.main-btn:hover {
+.main .main-btn:hover {
   transform: scale(1.1);
   background-color: #0a49f6;
 }
-.social-icons a {
+.main .social-icons a {
   font-size: 2.3em;
   color: #fff;
-  padding-right: 30px;
 }
+
 /* Ending Main */
+
+/* Sarting Services */
+.cards {
+  padding: 100px 200px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards .card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.5s ease;
+}
+.cards .card:hover {
+  transform: scale(1.1);
+}
+
+.cards .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.cards .info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+.cards .info {
+  text-align: center;
+}
+.projects {
+  padding: 100px 200px;
+}
+/* Ending Services */

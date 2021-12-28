@@ -58,15 +58,13 @@ header .navigation a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.main::before {
-  content: "\f121";
+.bg-main {
   font-weight: 900;
-  font-family: "Font Awesome 5 Free";
   color: white;
-  font-size: 50em;
+  width: 60em;
   position: absolute;
-  z-index: 1;
-  opacity: 0.1;
+  z-index: 0;
+  opacity: 0.4;
   top: 50px;
 }
 .main .container {
@@ -76,6 +74,7 @@ header .navigation a:hover {
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 .main .presonal-photo {
   border: 2px solid white;

@@ -58,14 +58,14 @@ header .navigation a:hover {
   justify-content: space-around;
   align-items: center;
 }
-.bg-main {
+.main .bg-main {
   font-weight: 900;
   color: white;
   width: 60em;
-  position: absolute;
+  position: fixed;
   z-index: 0;
-  opacity: 0.4;
-  top: 50px;
+  opacity: 0.1;
+  top: 10vh;
 }
 .main .container {
   display: flex;

@@ -9,16 +9,18 @@
 /* Starting Header */
 header {
   background-color: #f0f0f0;
-  width: 100%;
   position: fixed;
+  width: 100%;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 200px;
 }
-/* header .conatiner {
-} */
+.btn-mobile {
+  display: none;
+}
+
 header a {
   text-decoration: none;
 }
@@ -41,7 +43,7 @@ header .navigation a {
   color: #2980b9;
   font-size: 1.2em;
   font-weight: 700;
-  padding: 0 20px;
+  padding-left: 20px;
 }
 header .navigation a:hover {
   color: crimson;
@@ -49,9 +51,7 @@ header .navigation a:hover {
 /* Ending Header */
 
 /* Starting Main */
-/* section {
-  padding: 100px 200px;
-} */
+
 .main {
   display: flex;
   background-color: #000017;
@@ -61,8 +61,8 @@ header .navigation a:hover {
 .main .bg-main {
   font-weight: 900;
   color: white;
-  width: 60em;
-  position: fixed;
+  width: 100%;
+  position: absolute;
   z-index: 0;
   opacity: 0.1;
   top: 10vh;
@@ -126,9 +126,10 @@ header .navigation a:hover {
   transform: scale(1.1);
   background-color: #0a49f6;
 }
-.main .social-icons a {
-  font-size: 2.3em;
+.social-icons a {
+  font-size: 1.7em;
   color: #fff;
+  margin: 0 10px;
 }
 
 /* Ending Main */
@@ -178,7 +179,133 @@ header .navigation a:hover {
 .cards .info {
   text-align: center;
 }
-.projects {
-  padding: 100px 200px;
-}
+
 /* Ending Services */
+
+/* Starting My Skills */
+
+.skills .content {
+  margin-bottom: 5vh;
+}
+
+.skills .content img {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 5vh;
+  transition: 0.4s ease;
+}
+
+.skills .content img:hover {
+  transform: scale(1.1);
+}
+
+/* Ending My Skills */
+
+/* Starting Contact */
+
+.contact .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10vh 0;
+}
+.contact .icon {
+  font-size: 4em;
+}
+.contact p {
+  font-size: 1.5em;
+}
+/* Ending Contact */
+
+/* Starting Footer */
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.footer-title span {
+  color: #2980b9;
+}
+
+/* Ending Footer */
+
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 10px;
+  }
+  header a {
+    font-size: 5px;
+  }
+  .navigation a {
+    padding-left: 5px;
+    padding-right: 30px;
+  }
+  .img-logo {
+    display: none;
+  }
+  .title {
+    font-size: 1em;
+  }
+  .main .container {
+    padding: 80px 20px;
+    font-size: 0.7em;
+  }
+  .main .texture {
+    display: none;
+  }
+  .main .container h2 {
+    font-size: 1em;
+  }
+  .main .container h3 {
+    font-size: 1.6em;
+  }
+  content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .presonal-photo {
+    border: 2px solid white;
+    width: 40%;
+    margin-right: 5%;
+  }
+  .main .bg-main {
+    width: 40%;
+    top: 50%;
+  }
+  .main .container .main-btn {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .btn-mobile {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .main .bg-main {
+    width: 70%;
+    top: 50%;
+  }
+  .main .presonal-photo {
+    border: 2px solid white;
+    width: 40%;
+  }
+}
+
+@media (max-width: 280px) {
+}

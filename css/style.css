@@ -240,15 +240,13 @@ header .navigation a:hover {
 
 @media (max-width: 1023px) {
   header {
-    padding: 12px 10px;
+    padding: 5px 0px;
   }
   header a {
-    font-size: 5px;
+    font-size: 1px;
+    letter-spacing: 0;
   }
-  .navigation a {
-    padding-left: 5px;
-    padding-right: 30px;
-  }
+
   .img-logo {
     display: none;
   }
@@ -278,7 +276,7 @@ header .navigation a:hover {
     margin-right: 5%;
   }
   .main .bg-main {
-    width: 40%;
+    width: 70%;
     top: 50%;
   }
   .main .container .main-btn {
@@ -286,14 +284,11 @@ header .navigation a:hover {
     font-size: 1em;
     margin-bottom: 10px;
   }
+  .navigation a {
+    padding: 1px;
+  }
 }
 @media (max-width: 600px) {
-  .btn-mobile {
-    display: block;
-  }
-  .navigation {
-    display: none;
-  }
 }
 
 @media (max-width: 415px) {
@@ -305,7 +300,4 @@ header .navigation a:hover {
     border: 2px solid white;
     width: 40%;
   }
-}
-
-@media (max-width: 280px) {
 }

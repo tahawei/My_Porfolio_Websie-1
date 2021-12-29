@@ -17,7 +17,7 @@ header {
   align-items: center;
   padding: 10px 200px;
 }
-.btn-mobile {
+.btn-mobil {
   display: none;
 }
 
@@ -288,16 +288,44 @@ header .navigation a:hover {
     padding: 1px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 560px) {
+  header .navigation {
+    width: 60%;
+    background-color: #3d3d3d;
+    min-height: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 0.7;
+    transition: 0.5s ease;
+    display: block;
+    left: -80%;
+  }
+  header .navigation.active {
+    display: block;
+    left: 0%;
+  }
+
+  header .navigation a {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-size: 2em;
+    border-bottom: 1px solid #fff;
+  }
+  .btn-mobil {
+    display: block;
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 415px) {
-  .main .bg-main {
-    width: 70%;
-    top: 50%;
+  .cards {
+    padding: 100px 0;
   }
-  .main .presonal-photo {
-    border: 2px solid white;
-    width: 40%;
+  header .logo {
+    font-size: 1.5em;
+  }
+  .contact .card #email {
+    font-size: 0.9em;
   }
 }
